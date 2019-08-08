@@ -1,61 +1,87 @@
-var userList = [];
-var lastAvailableId = 1;
+// Module
+var db = (function() {
+    'use strict';
 
-var user = {
-    "id": "",
-    "userName":"",
-    "birthDate":"",
-    "cellphone":"",
-    "address":"",
-    "userEmergencyContact": [{
-        "name":"",
-        "email":"",
-        "cellphone":"",
-        "address":""
-    }],
-    "usertMedicalInfo": {
-        "userDiseases": [],
-        "userBloodType":""
+    var user = {
+        "id": "6",
+        "name": "Diogo Rolo",
+        "username":"rolomartelation",
+        "password": "hammerme",
+        "package": "hell",
+        "events": [
+            {
+                "type": "date",
+                "name": "Date",
+                "contact": {
+                    "name": "Sara",
+                    "phone": "987546298"
+                }
+            },
+            {
+                "type": "ex",
+                "name": "Don't Call Your Ex",
+                "contact": {
+                    "name": "Christina",
+                    "phone": "970976784"
+                }
+            },
+            {
+                "type": "alien",
+                "name": "Alien Invasion",
+                "contact": {
+                    "name": "Superman",
+                    "phone": "965371869"
+                }
+            },
+            {
+                "type": "hostage",
+                "name": "Hostage",
+                "contact": {
+                    "name": "Matheus",
+                    "phone": "987650983"
+                }
+            },
+            {
+                "type": "r",
+                "name": "R",
+                "contact": {
+                    "name": "A",
+                    "phone": "999888777"
+                }
+            }
+        ]
     }
-}
 
-function getNewId() {
-    let id = lastAvailableId;
-    lastAvailableId++
-    return id;
-}
+    // Internal Methods
+    function _getUser() {
+        return selectedUser = {
+            "name": user.name, 
+            "package": user.package,
+            "events": user.events
+        }
+    }
 
-function save(user) {
-    user.id = getNewId();
-    userList.push(user);
-    console.log(userList);
-}
+    function _getHelp(situationIndex) {
+        return selectedHelp = {
+            "name": user.events[situationIndex].contact.name,
+            "phone": user.events[situationIndex].contact.phone
+        }
+    }
 
-function createUser() {
-    var user = new Object();
-    user.name = $('#name').val();
-    user.dateOfBirth = $('#birthDate').val();
-    user.cellphone = $('#cellphone').val();
-    user.address = $('#address').val();
-    user.userEmergencyContact.name = $('#contactName').val();
-    user.userEmergencyContact.email = $('#contactEmail').val();
-    user.userEmergencyContact.cellphone = $('#contactCellphone').val();
-    user.userEmergencyContact.address = $('#contactAdress').val();
+    // Public Methods
+    return {
+        getUser: function() {
+            _getUser();
+        },
 
-
-    save(user);
-}
-
-function findUser(id) {
-    return userList.filter(user => user.id === id);
-}
-
-
+        getHelp(situation) {
+            _getHelp(situation);
+        }
+    }
+})
 
 // Function Triggers
 $(document).on('click', '#subscribe', function(){
     event.preventDefault();
     createUser();
-})
-
-$(document).on('click', )
+});
