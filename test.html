@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
   <script src="./db.js"></script>
+  <script src="./modaltrigger.js"></script>
+
 
     <title>Document</title>
 </head>
@@ -27,7 +30,23 @@
         
         <button type="submit" class="btn btn-primary" id="subscribe">Subscribe</button>
       </form>
-
+      <a class="button is-rounded" id="modalBtn">Rounded</a>
+      <div class="modal" id="modalStuff">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete closeModal" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success closeModal">Save changes</button>
+                <button class="button closeModal">Cancel</button>
+              </footer>
+            </div>
+          </div>
 
 </body>
 </html>
