@@ -1,28 +1,27 @@
-
 .btnImg {
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .btnBeer {
-  background-image: url('../img/beer.gif'); 
+  background-image: url("../img/beer.gif");
 }
 
 .btnAlien {
-  background-image: url('../img/alien.gif');
+  background-image: url("../img/alien.gif");
 }
 
 .btnMyEx {
-  background-image: url('../img/ex.gif');
+  background-image: url("../img/ex.gif");
 }
 
 .btnR {
-  background-image: url('../img/r4.gif');
+  background-image: url("../img/r4.gif");
 }
 
 .btnDate {
-  background-image: url('../img/date.gif');
+  background-image: url("../img/date.gif");
 }
 
 .mt-1 {
@@ -89,3 +88,6 @@
   margin-left: 2rem;
 }
 
+.align {
+  text-align: center;
+}
