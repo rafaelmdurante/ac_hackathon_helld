@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+p {
+  font-family: 'Montserrat', sans-serif;
+} 
+
 .btnImg {
   background-position: center;
   background-repeat: no-repeat;
@@ -27,6 +33,19 @@
 .btnOdor {
   background-image: url("../img/shit.gif");
 
+}
+
+.btnImg {
+  transition: all 0.3s;
+  
+}
+
+.btnImg:hover {
+  transform: scale(1.2);
+}
+
+.btnName {
+  font-family: 'Montserrat', sans-serif;
 }
 
 #footer {
@@ -129,6 +148,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #cover {
@@ -141,3 +161,4 @@
   max-width: 40%;
   padding: 3%;
 }
+

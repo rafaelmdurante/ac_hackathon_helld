@@ -18,9 +18,11 @@ $(document).on("click", "#btnMyEx", function() {
   updateHelper(2);
   $("#modalBtnCancel").addClass("btnOpenLink");
 });
+
 // Open link on new tab (Only for Ex - others need cleanBtnCancel though)
 $(document).on("click", ".btnOpenLink", function() {
-  window.open("https://bit.ly/2ZUmGFu", "_blank");
+  $("#modalBox").removeClass("is-active");
+  $("#modalVideo").addClass("is-active");
 });
 
 // Odor
@@ -39,7 +41,7 @@ $(document).on("click", "#btnAlien", function() {
 
 // ;-)
 $(document).on("click", "#btnR", function() {
-  updateModal("R", "A", ";-)");
+  updateModal("Robin", "Audrey", ";-)");
   updateHelper(5);
   cleanBtnCancel();
 });
@@ -50,6 +52,10 @@ $(document).on("click", "#btnR", function() {
 $(document).on("click", ".closeModal", function() {
   $("#modalBox").removeClass("is-active");
 });
+
+$(document).on('click', '#modalBtnSuccessVideo', function() {
+  $('#modalVideo').removeClass('is-active');
+})
 
 /**
  * Update the name and message of the modal when active

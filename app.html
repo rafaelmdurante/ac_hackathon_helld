@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Highway To Hell'd!</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
@@ -39,19 +39,17 @@
     <section class="section">
       <div class="container container-overlay">
         <div class="columns">
-          <div class="column mt-4 mb-4 container-flex-center">
+          <div class="column mt-1 mb-1 container-flex-center">
             <a class="button is-rounded is-large btnDate btnImg " style="height:200px; width:200px" id="btnDate"></a>
-            
+            <p class="mt-2 is-size-4 btnName">date</p>
           </div>
-          <div class="column mt-4 mb-4 container-flex-center">
+          <div class="column mt-1 mb-1 container-flex-center">
             <a class="button is-primary is-rounded is-large btnBeer btnImg" style="height:200px; width:200px;" id="btnAltered"></a>
+            <p class="mt-2 is-size-4 btnName">wasted</p>
           </div>
-          <div class="column mt-4 mb-4 container-flex-center">
-            <a
-              class="button is-white is-rounded is-large btnMyEx btnImg"
-              style="height:200px; width:200px"
-              id="btnMyEx"
-            ></a>
+          <div class="column mt-1 mb-1 container-flex-center">
+            <a class="button is-white is-rounded is-large btnMyEx btnImg" style="height:200px; width:200px" id="btnMyEx"></a>
+            <p class="mt-2 is-size-4 btnName">my ex</p>
           </div>
         </div>
       </div>
@@ -61,7 +59,8 @@
     <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column mt-4 mb-4 container-flex-center">
+          <div class="column mt-1 mb-1 container-flex-center">
+              <p class="mb-2 is-size-4 btnName">odor</p>
             <a
               class="button is-warning is-rounded is-large btnOdor btnImg"
               style="height:200px; width:200px"
@@ -69,14 +68,16 @@
               ></a
             >
           </div>
-          <div class="column mt-4 mb-4 container-flex-center">
+          <div class="column mt-1 mb-1 container-flex-center">
+              <p class="mb-2 is-size-4 btnName">alien</p>
             <a
               class="button is-success is-rounded is-large btnAlien btnImg"
               style="height:200px; width:200px"
               id="btnAlien"
             ></a>
           </div>
-          <div class="column mt-4 mb-4 container-flex-center">
+          <div class="column mt-1 mb-1 container-flex-center">
+              <p class="mb-2 is-size-4 btnName">;-)</p>
             <a
               class="button is-warning is-rounded is-large btnR btnImg"
               style="height:200px; width:200px"
@@ -114,8 +115,7 @@
           </article>
         </section>
         <footer class="modal-card-foot">
-          <a href="" class="btnSuccessAction mr-2" target="_blank"
-            ><button class="button is-success" id="modalBtnSuccess">
+          <a href="" class="btnSuccessAction mr-2"><button class="button is-success" id="modalBtnSuccess">
               Save changes
             </button></a
           >
@@ -126,6 +126,32 @@
       </div>
     </div>
 
+    <!-- ModalVideo -->
+    <div class="modal" id="modalVideo">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title" id="modalTitle">Porn Hub</p>
+          <button class="delete closeModalVideo" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <video src="./img/vid.mp4" controls>
+            Censored <code>video</code>.
+          </video>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="#" class="btnSuccessAction mr-2"></a>
+            <button class="button is-success" id="modalBtnSuccessVideo">
+              I'm satisfied
+            </button>
+          </a>
+        </footer>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
     <footer class="footer" id="footer">
       <div class="content has-text-centered">
           <p class="has-text-grey-dark"><span class="has-text-weight-bold">Hell'd</span> by Manica, Miranda, Páscoa and Sousa. The source code is licensed AC. The website content is licensed CC BY NC SA 4.0.</p>
