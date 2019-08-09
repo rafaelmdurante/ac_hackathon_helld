@@ -16,7 +16,7 @@ var db = (function() {
                     "name": "Sara",
                     "image": "./img/sara.png",
                     "phone": "987546298",
-                    "message": "The person was hot. The few texts you exchanged sounded good.\nBut something went wrong.\nWere you catfished?\nAre you a butcher and she’s a vegan?\n\nIt doesn’t matter, Sara is on its way."
+                    "message": "The person was hot. The few texts you exchanged sounded good.\nBut something went wrong.\nWere you catfished?\nAre you a butcher and she’s a vegan?\n\nIt doesn’t matter, Sara is on her way."
                 }
             },
             {
@@ -50,20 +50,20 @@ var db = (function() {
                 }
             },
             {
-                "type": "hostage",
-                "name": "Hostage",
+                "type": "odor",
+                "name": "Odor",
                 "contact": {
                     "name": "António",
-                    "image": "./img/???????????.png",
+                    "image": "./img/antonio.png",
                     "phone": "987650983",
                     "message": "‘Nobody speak, nobody get choked’, he said. Do you really believe it though? As the code (cadets) smell reaches your nostrils, you call him."
                 }
             },
             {
                 "type": "r",
-                "name": "R",
+                "name": "Robin",
                 "contact": {
-                    "name": "A",
+                    "name": "Audrey",
                     "image": "./img/audrey.png",
                     "phone": "999888777",
                     "message": "You thought <Academia de Código_> was the solution to all your woes. Little did you knew, that Robin would be your MC… Is he teaching you CSS? Are you having flashes of the Vietnam War you never had? Call Your Saint Now!"

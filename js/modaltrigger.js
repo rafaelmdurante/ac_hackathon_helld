@@ -23,9 +23,9 @@ $(document).on("click", ".btnOpenLink", function() {
   window.open("https://bit.ly/2ZUmGFu", "_blank");
 });
 
-// Hostage
-$(document).on("click", "#btnHostage", function() {
-  updateModal("Hostage", "SUPERMAN!", "Wanna be a hero!");
+// Odor
+$(document).on("click", "#btnOdor", function() {
+  updateModal("Odor", "ANTONIO!", "I\'d rather smell the code.");
   updateHelper(4);
   cleanBtnCancel();
 });

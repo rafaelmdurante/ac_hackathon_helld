@@ -17,11 +17,16 @@
 }
 
 .btnR {
-  background-image: url("../img/r4.gif");
+  background-image: url("../img/robin1.gif");
 }
 
 .btnDate {
   background-image: url("../img/date1.gif");
+}
+
+.btnOdor {
+  background-image: url("../img/shit.gif");
+
 }
 
 #footer {

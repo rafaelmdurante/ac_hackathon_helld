@@ -12,5 +12,5 @@ $(document).on("click", "#modalBtnCancel", function() {
 });
 
 $(document).on("click", "#modalBtnLogin", function() {
-  window.open("/Users/codecadet/ac_hackathon_sosold/login.html");
+  window.open("./app.html", '_self');
 });
