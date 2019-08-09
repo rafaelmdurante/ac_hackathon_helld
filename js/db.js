@@ -49,9 +49,9 @@ var db = (function() {
                 "type": "hostage",
                 "name": "Hostage",
                 "contact": {
-                    "name": "Matheus",
+                    "name": "Superman",
                     "phone": "987650983",
-                    "message": "‘Nobody speak, nobody get choked’, they said. Do you really believe it though? Call Matheus, go ahead."
+                    "message": "‘Nobody speak, nobody get choked’, they said. Do you really believe it though? Call Superman, go ahead."
                 }
             },
             {

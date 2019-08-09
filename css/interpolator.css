@@ -21,7 +21,12 @@
 }
 
 .btnDate {
-  background-image: url("../img/date.gif");
+  background-image: url("../img/date1.gif");
+}
+
+#footer {
+
+  background-color: hsl(171, 100%, 41%);
 }
 
 .mt-1 {

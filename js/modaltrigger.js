@@ -26,14 +26,14 @@ $(document).on('click', '#btnMyEx', function(){
 // Hostage
 $(document).on('click', '#btnHostage', function(){
     updateModal('Hostage', 'SUPERMAN!', 'Wanna be a hero!');
-    updateHelper(3);
+    updateHelper(4);
     cleanBtnCancel();
 })
 
 // Alien
 $(document).on('click', '#btnAlien', function(){
     updateModal('Alien', 'They want to stick a probe in my WHAT?!', '⏃⌰⏁ ⊑⏃⟟⌰☌.');
-    updateHelper(4);
+    updateHelper(3);
     cleanBtnCancel();
 })
 
