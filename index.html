@@ -13,16 +13,18 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
   </head>
 
   <body>
     <!-- LOGO -->
-    <a
-      class="logo ml-2 mt-1"
-      href="./index.html"
-      style="position: fixed;"
-    >
-      <img src="./img/logo.png" width="125px"/>
+    <a class="logo ml-2 mt-1" href="./index.html" style="position: fixed;">
+      <img src="./img/logo.png" width="125px" />
     </a>
     <!-- NAVBAR -->
     <div class="container">
@@ -58,18 +60,66 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a
-                  class="button is-warning"
-                  href="./form.html"
-                >
+                <a class="button is-warning" href="./form.html">
                   <strong>Sign up</strong>
                 </a>
-                <a
-                  class="button is-light"
-                  href="./login.html"
-                >
+
+                <div class="button is-light" id="login">
                   Log in
-                </a>
+                </div>
+
+                <!-- MODAL -->
+                <div class="modal" id="modalLogin">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Login Credentials</p>
+                      <button
+                        class="delete"
+                        aria-label="close"
+                        id="modalBtnClose"
+                      ></button>
+                    </header>
+                    <section class="modal-card-body">
+                      <!-- Content ... -->
+
+                      <div class="field">
+                        <p class="control has-icons-left">
+                          <input
+                            class="input"
+                            type="username"
+                            placeholder="Username"
+                          />
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control has-icons-left">
+                          <input
+                            class="input"
+                            type="password"
+                            placeholder="Password"
+                          />
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control">
+                          <button class="button is-success" id="modalBtnLogin">
+                            Login
+                          </button>
+                          <button class="button" id="modalBtnCancel">
+                            Cancel
+                          </button>
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -85,10 +135,7 @@
           src="https://images.unsplash.com/photo-1495427513693-3f40da04b3fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
         /> -->
 
-        <img
-          src="./img/logo_orange.png"
-          class="imgMax800"
-        />
+        <img src="./img/logo_orange.png" class="imgMax800" />
       </div>
     </div>
 
