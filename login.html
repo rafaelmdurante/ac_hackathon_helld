@@ -4,96 +4,89 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Bulma!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"/>
     <link rel="stylesheet" href="./css/interpolator.css" />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./js/db.js"></script>
+    <script src="./js/modaltrigger.js"></script>
+
   </head>
 
   <body>
+
     <div class="container">
       <div class="mt-4">
-        <h1 class="title">I'm here to help you, friend!</h1>
+        <h1 class="title">Wadahell is happening?</h1>
       </div>
     </div>
 
+    <!-- Upper Buttons -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column">
             <div class="mt-4 mb-4">
-              <a
-                class="button is-rounded is-large"
-                style="height:200px; width:200px">Button1</a>
-            
-        </div>
-          </div>
-          <div class="column">
-            <div class="mt-4 mb-4">
-              <a
-                class="button is-primary is-rounded is-large"
-                style="height:200px; width:200px"
-                >Button2</a
-              >
+              <a class="button is-rounded is-large btnDate btnImg" style="height:200px; width:200px" id="btnDate">Date</a>
             </div>
           </div>
           <div class="column">
             <div class="mt-4 mb-4">
-                <a
-                    class="button is-link is-rounded is-large"
-                    style="height:200px; width:200px"
-                 >Button3</a
-                >
+              <a class="button is-primary is-rounded is-large btnBeer btnImg" style="height:200px; width:200px;" id="btnAltered"></a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="mt-4 mb-4">
+                <a class="button is-white is-rounded is-large btnMyEx btnImg" style="height:200px; width:200px" id="btnMyEx"></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Lower Buttons -->
     <section class="section">
-            <div class="container">
-              <div class="columns">
-                <div class="column">
-                        <div class="mt-4 mb-4">
-                                <a
-                                  class="button is-info is-rounded is-large"
-                                  style="height:200px; width:200px"
-                                  >Button4</a
-                                >
-                              </div>
-                </div>
-                <div class="column">
-                        <div class="mt-4 mb-4">
-                                <a
-                                  class="button is-success is-rounded is-large"
-                                  style="height:200px; width:200px"
-                                  >Button5</a
-                                >
-                              </div>
-                </div>
-                <div class="column">
-                        <div class="mt-4 mb-4">
-                                <a
-                                  class="button is-danger is-rounded is-large"
-                                  style="height:200px; width:200px"
-                                  >Button6</a
-                                >
-                              </div>
-                </div>
-              </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="mt-4 mb-4">
+              <a class="button is-info is-rounded is-large" style="height:200px; width:200px" id="btnHostage">Hostage</a>
             </div>
+          </div>
+          <div class="column">
+            <div class="mt-4 mb-4">
+              <a class="button is-success is-rounded is-large btnAlien btnImg" style="height:200px; width:200px" id="btnAlien"></a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="mt-4 mb-4">
+              <a class="button is-warning is-rounded is-large btnR btnImg" style="height:200px; width:200px" id="btnR"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modalBox">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title" id="modalTitle">Modal title</p>
+            <button class="delete closeModal" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <h2 id="modalHero">Title</h2>
+            <p id="modalText">texto</p>
           </section>
-
-
-
-      
-      
-      
+          <footer class="modal-card-foot">
+            <a href="" class="btnSuccessAction mr-2" target="_blank"><button class="button is-success" id="modalBtnSuccess">Save changes</button></a>
+            <button class="button closeModal btnOpenLink" id="modalBtnCancel">Cancel</button>
+          </footer>
+        </div>
     </div>
+      
   </body>
 </html>
