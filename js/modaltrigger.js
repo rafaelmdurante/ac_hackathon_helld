@@ -1,6 +1,6 @@
 // Date
 $(document).on('click', '#btnDate', function(){
-    updateModal('Date', 'Release me!', 'I\'m desperate!');
+    updateModal(db.getHelp(0).name, 'Release me!', 'I\'m desperate!');
     updateHelper(0);
     cleanBtnCancel();
 })
@@ -56,19 +56,19 @@ $(document).on('click', '.closeModal', function(){
  * @param {*} eventIndex 
  */
 function updateHelper(eventIndex) {
-    console.log($('#modalHero').text(db.getHelp(eventIndex).name));
     $('#modalText').text(db.getHelp(eventIndex).message);
+    $('#helperImage').attr('src', db.getHelp(eventIndex).image);
 }
 
 /**
  * Update the modal with those three arguments, triggered everytime a modal is clicked
- * @param {*} title 
+ * @param {*} heroName 
  * @param {*} buttonSuccess 
  * @param {*} buttonCancel 
  */
-function updateModal(title, buttonSuccess, buttonCancel) {
+function updateModal(heroName, buttonSuccess, buttonCancel) {
     $('#modalBox').addClass('is-active');
-    $('#modalTitle').text(title);
+    $('#modalTitle').text(heroName);
     $('#modalBtnSuccess').text(buttonSuccess);
     $('#modalBtnCancel').text(buttonCancel);
 };
