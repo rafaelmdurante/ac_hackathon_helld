@@ -14,7 +14,7 @@ $(document).on("click", "#btnAltered", function() {
 
 // Ex
 $(document).on("click", "#btnMyEx", function() {
-  updateModal("My Ex", "Call a good friend!", "Think before continuing");
+  updateModal("My Ex", "Call for advice!", "Think before continuing");
   updateHelper(2);
   $("#modalBtnCancel").addClass("btnOpenLink");
 });
